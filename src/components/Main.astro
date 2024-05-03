@@ -1,0 +1,179 @@
+<section class="sec-1 active relative mx-12 mt-52 flex flex-col items-center justify-center xl:flex-row xl:gap-36" >
+   <div class="w-full xl:w-1/2">
+    <img id="logo" src="Logo.webp" alt="logo" class=" mb-18 m-auto" />
+ 
+   <h1 class=" text-xl ">
+        MiuCoin con una Bienvenida  
+        <span class=" font-bold">Miu Coin una mision por dar a nuestros usuarios
+        </span>
+      </h1>
+    <div class="relative">
+    <svg class=" absolute h-full w-full overflow-visible">
+      <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style={{ stopColor: "#DC3A2B", stopOpacity: 1 }}
+      ></stop>
+      <stop offset="100%" style={{ stopColor: "#E18510", stopOpacity: 1 }}
+      ></stop>
+      </linearGradient>
+      </defs>
+      <path
+          id="border-path"
+          fill="none"
+          stroke="url(#gradient)"
+          stroke-width="4">
+      </path>
+    </svg>
+
+       
+           <p id="anim-p" class=" p-4 text-lg dark:text-white">
+                              primer semana y segunda semana): 
+                  Lanzamiento de Miucoin, ICO y 
+                  distribución inicial 
+                  construcción de la comunidad :como 
+                  programa de recompensas se le dara
+                  50.000 Miu a todo aquel usuario que 
+                  quiera unirse a nuestra comunidad,(la 
+                  distribución será todos los domingos de la 
+                  semana)
+                  Fase 2 
+                  (semana 3): Lanzamiento oficial de 
+                  Miucoin al mercado 
+                  -al llegar a los 1000/1500 holder se 
+                  empezara a buscar enlistamiento del 
+                  token en coingeko y coinmarket cap
+                  - concursos para que los usuarios se 
+                  puedan beneficiar por creación de 
+                  contenido
+
+            </p>
+        </div>
+  <article class="flex justify-center pt-2 text-center mb-12 xl:gap-16">
+    <div class="w-32">
+      <h2 >Holders</h2>
+      <span id="Holders" class="text-xl font-bold">1500</span>   
+     </div> 
+     <div class="w-32">
+      <h2 >precio inicial</h2>
+      <span id="recompesa" class="animate text-xl font-bold">50</span>   
+     </div> 
+     <div class="w-32">
+      <h2 >Mision en fase</h2>
+      <span class=" text-xl font-bold">00045</span>   
+     </div>    
+  </article>
+</div>
+
+<div id="scroll2" class="relative">
+    <img id="images" class="images animate h-96" src="Volando.webp" alt="Logo" />
+  </div>
+</div>
+</section>
+
+<style>
+
+p{
+		color: rgba(0.0, 0.0, 0.0, 0.8);
+		line-height: 1.4;
+		padding-left: 8px;
+		font-size: 1em;
+		font-weight: 100;
+		letter-spacing: .5px;
+	}
+
+  #logo{
+    width: 90px;
+  }
+ 
+  #border-path{
+		animation: draw 1s forwards 1s ease-in-out;
+
+	}
+	@keyframes draw {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  .sec-1 .animate{
+    transform: translateX(100%);
+  }
+  .sec-1.active .animate{
+    transform: translateX(0);
+  }
+  section .animate{
+    transition:2s;
+  }
+
+</style>
+  
+<script>
+  function updatePath() {
+    const textMain = document.querySelector("#anim-p") as HTMLElement
+    const path = document.querySelector("#border-path") as SVGPathElement
+    
+    if (textMain && path) {
+      path.setAttribute(
+        "d",
+        `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${
+          textMain.offsetHeight / 2
+        }`
+       )
+      
+      const pathLength = path.getTotalLength()
+
+      path.style.strokeDasharray = pathLength.toString()
+      path.style.strokeDashoffset = pathLength.toString()
+    }
+  }
+
+  //Increment
+  function incrementCounter(
+    selector: string,
+    current: number,
+    target: number,
+    duration: number,
+    letter: string = ""
+  ) {
+    let counter = document.getElementById(selector)
+    let stepTime = Math.abs(Math.floor(duration / target))
+    if (current < target && counter) {
+      current++
+      counter.innerText = current.toString() + letter
+      setTimeout(
+        () => incrementCounter(selector, current, target, duration, letter),
+        stepTime
+      )
+    }
+  }
+  incrementCounter("Holders", 0, 1500, 1000)
+  incrementCounter("recompesa", 0, 50, 1000, "k")
+ 
+
+  window.addEventListener("DOMContentLoaded", updatePath)
+
+  window.addEventListener("resize", updatePath)
+
+  let sections = document.querySelectorAll("section");
+  window.onscroll = () =>{
+    sections.forEach(sec =>{
+      let top = window.scrollY;
+      let offset = sec.offsetTop -150;
+      let height = sec.offsetHeight;
+      if(top >= offset && top < offset + height){
+         sec.classList.add("active");  
+      }else{
+        sec.classList.remove("active");
+      }
+    })
+  }
+</script>

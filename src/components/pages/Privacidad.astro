@@ -1,0 +1,48 @@
+---
+import NavBarPages from '../util/NavBarPrivacidadAndTerminos.astro'
+
+import { getI18N } from "../../i18n/index" 
+import Layout from "../../layouts/Layout.astro"
+
+
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+const HEADING_STYLES =
+  "mx-auto mt-16 mb-4 text-wrap text-4xl font-semibold tracking-wide uppercase"
+const SECTION_STYLES = 
+  "max-w-5xl mx-auto my-10 text-pretty px-6 text-left text-lg leading-relaxed sm:px-20"
+---
+
+<Layout title=`${i18n.SEO.PRIVACY_POLICY_TITLE}`>
+  <NavBarPages />
+    <main class="py-8">
+        <section class=`${SECTION_STYLES}`>
+            <h2 class=`${HEADING_STYLES}`>{i18n.PRIVACY.POLICY.TITLE}</h2>
+            <p>{i18n.PRIVACY.POLICY.DESCRIPTION_1}</p>
+            <p>{i18n.PRIVACY.POLICY.DESCRIPTION_2}</p> 
+        </section>
+        <section class=`${SECTION_STYLES}`>
+            <h2 class=`${HEADING_STYLES}`>{i18n.PRIVACY.DEFINITIONS.TITLE}</h2>
+            <p>{i18n.PRIVACY.DEFINITIONS.DESCRIPTION}</p>
+            <ul>
+              <li><p>{i18n.PRIVACY.DEFINITIONS.ITEM_1}</p></li>
+              <li><p>{i18n.PRIVACY.DEFINITIONS.ITEM_2}</p></li>
+              <li><p>{i18n.PRIVACY.DEFINITIONS.ITEM_3}</p></li>
+              <li><p>{i18n.PRIVACY.DEFINITIONS.ITEM_4}</p></li>
+            </ul>
+        </section>
+        <section class=`${SECTION_STYLES}`>
+            <h2 class=`${HEADING_STYLES}`>{i18n.PRIVACY.SOCIALS.TITLE}</h2>
+            <p>{i18n.PRIVACY.SOCIALS.DESCRIPTION_1}</p>
+            <p>{i18n.PRIVACY.SOCIALS.DESCRIPTION_2}</p>
+        </section>
+        <section class=`${SECTION_STYLES}`>
+            <h2 class=`${HEADING_STYLES}`>{i18n.PRIVACY.COOKIES.TITLE}</h2>
+            <p>{i18n.PRIVACY.COOKIES.DESCRIPTION_1}</p>
+            <p>{i18n.PRIVACY.COOKIES.DESCRIPTION_2}</p>
+          </section>
+        
+    </main>
+
+</Layout>
