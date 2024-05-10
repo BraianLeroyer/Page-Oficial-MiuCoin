@@ -74,5 +74,8 @@ const translatePath = useTranslatedPath(lang);
     
     var today = new Date();
     var year = today.getFullYear();
-    document.getElementById('year').innerHTML = year.toString();
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.innerHTML = year.toString();
+    }
 </script>
