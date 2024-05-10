@@ -15,7 +15,7 @@ const translatePath = useTranslatedPath(lang);
             <a href="/" class="flex items-center -mt-12" >
                 <img src="Logo.webp" alt="Logo en footer"  class="w-32"/>
                 <div class="flex mt-9 sm:justify-center sm:mt-10">
-                    <a href="#" class="text-gray-500 hover:text-slate-900 dark:hover:text-slate-300 ms-5">
+                    <a href="https://twitter.com/Miu_coin" class="text-gray-500 hover:text-slate-900 dark:hover:text-slate-300 ms-5">
                         <Icon name="x" class="w-7 h-7" />
                         <span class="sr-only">X page</span>
                     </a>
@@ -23,7 +23,7 @@ const translatePath = useTranslatedPath(lang);
                         <Icon name="telegram" class="w-7 h-7" />
                         <span class="sr-only">Telegram page</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <a href="https://github.com/ComunidadMiuCoin" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                         <Icon name="github" class="w-7 h-7" />
                         <span class="sr-only">GitHub account</span>
                     </a>
@@ -41,7 +41,7 @@ const translatePath = useTranslatedPath(lang);
                           <a href="https://t.me/+EHxgXUgl8bEwMmIx" class="hover:underline ">Telegram</a>
                       </li>
                       <li class="mb-2 ">   
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">X</a>
+                          <a href="https://twitter.com/Miu_coin" class="hover:underline ">X</a>
                       </li>
                   </ul>
               </div>
@@ -63,9 +63,15 @@ const translatePath = useTranslatedPath(lang);
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 hover:underline">© 2024. Todos los derechos reservados MiuCoin.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 hover:underline">© <span id="year"></span>. Todos los derechos reservados MiuCoin.
           </span>
          
       </div>
     </div>
 </footer>
+
+<script>
+    var today = new Date();
+    var year = today.getFullYear();
+    document.getElementById('year').innerHTML = year;
+</script>
