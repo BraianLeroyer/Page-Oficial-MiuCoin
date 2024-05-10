@@ -1,5 +1,11 @@
 ---
 import { Icon } from "astro-icon/components";
+
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 <footer id="Footer" class="bg-black/10">
 
@@ -9,15 +15,11 @@ import { Icon } from "astro-icon/components";
             <a href="/" class="flex items-center -mt-12" >
                 <img src="Logo.webp" alt="Logo en footer"  class="w-32"/>
                 <div class="flex mt-9 sm:justify-center sm:mt-10">
-                    <a href="#" class="text-gray-500 hover:text-blue-800 dark:hover:text-blue-800">
-                        <Icon name="facebook" class="w-7 h-7" />
-                        <span class="sr-only">facebook page</span>
-                    </a>
                     <a href="#" class="text-gray-500 hover:text-slate-900 dark:hover:text-slate-300 ms-5">
                         <Icon name="x" class="w-7 h-7" />
                         <span class="sr-only">X page</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-500 ms-5">
+                    <a href="https://t.me/+EHxgXUgl8bEwMmIx" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-500 ms-5">
                         <Icon name="telegram" class="w-7 h-7" />
                         <span class="sr-only">Telegram page</span>
                     </a>
@@ -25,10 +27,8 @@ import { Icon } from "astro-icon/components";
                         <Icon name="github" class="w-7 h-7" />
                         <span class="sr-only">GitHub account</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-[#405DE6] dark:hovertext-[#405DE6] ms-5">
-                        <Icon name="instagram" class="w-7 h-7" />
-                        <span class="sr-only">instagram account</span>
-                    </a>
+                    
+                  
                   
                 </div>
             </a>
@@ -37,8 +37,11 @@ import { Icon } from "astro-icon/components";
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Comunidad</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-2">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Telegram</a>
+                      <li class="mb-2 ">
+                          <a href="https://t.me/+EHxgXUgl8bEwMmIx" class="hover:underline ">Telegram</a>
+                      </li>
+                      <li class="mb-2 ">   
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">X</a>
                       </li>
                   </ul>
               </div>
@@ -46,13 +49,13 @@ import { Icon } from "astro-icon/components";
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-2">
-                          <a href="/privacidad" class="hover:underline">Privacidad</a>
+                          <a href={translatePath('/privacidad')} class="hover:underline">Privacidad</a>
                       </li>
                       <li>
-                          <a href="/terminos" class="hover:underline">Terminos &amp; Condiciones</a>
+                          <a href={translatePath('/terminos')} class="hover:underline">Terminos &amp; Condiciones</a>
                       </li>
                       <li>
-                        <a href="/cookie" class="hover:underline">Cookies</a>
+                        <a href={translatePath('/cookie')} class="hover:underline">Cookies</a>
                       </li>
                   </ul>
               </div>

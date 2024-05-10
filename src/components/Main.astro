@@ -1,79 +1,36 @@
-<section class="sec-1 active relative mx-12 mt-52 flex flex-col items-center justify-center xl:flex-row xl:gap-36" >
-   <div class="w-full xl:w-1/2">
-    <img id="logo" src="Logo.webp" alt="logo" class=" mb-18 m-auto" />
- 
-   <h1 class=" text-xl ">
-        MiuCoin con una Bienvenida  
-        <span class=" font-bold">Miu Coin una mision por dar a nuestros usuarios
-        </span>
-      </h1>
-    <div class="relative">
-    <svg class=" absolute h-full w-full overflow-visible">
-      <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style={{ stopColor: "#DC3A2B", stopOpacity: 1 }}
-      ></stop>
-      <stop offset="100%" style={{ stopColor: "#E18510", stopOpacity: 1 }}
-      ></stop>
-      </linearGradient>
-      </defs>
-      <path
-          id="border-path"
-          fill="none"
-          stroke="url(#gradient)"
-          stroke-width="4">
-      </path>
-    </svg>
+---
+import { Icon } from "astro-icon/components";
+---
 
-       
-           <p id="anim-p" class=" p-4 text-lg dark:text-white">
-                              primer semana y segunda semana): 
-                  Lanzamiento de Miucoin, ICO y 
-                  distribución inicial 
-                  construcción de la comunidad :como 
-                  programa de recompensas se le dara
-                  50.000 Miu a todo aquel usuario que 
-                  quiera unirse a nuestra comunidad,(la 
-                  distribución será todos los domingos de la 
-                  semana)
-                  Fase 2 
-                  (semana 3): Lanzamiento oficial de 
-                  Miucoin al mercado 
-                  -al llegar a los 1000/1500 holder se 
-                  empezara a buscar enlistamiento del 
-                  token en coingeko y coinmarket cap
-                  - concursos para que los usuarios se 
-                  puedan beneficiar por creación de 
-                  contenido
-
-            </p>
-        </div>
-  <article class="flex justify-center pt-2 text-center mb-12 xl:gap-16">
-    <div class="w-32">
-      <h2 >Holders</h2>
-      <span id="Holders" class="text-xl font-bold">1500</span>   
-     </div> 
-     <div class="w-32">
-      <h2 >precio inicial</h2>
-      <span id="recompesa" class="animate text-xl font-bold">50</span>   
-     </div> 
-     <div class="w-32">
-      <h2 >Mision en fase</h2>
-      <span class=" text-xl font-bold">00045</span>   
-     </div>    
-  </article>
-</div>
-
-<div id="scroll2" class="relative">
-    <img id="images" class="images animate h-96" src="Volando.webp" alt="Logo" />
+<section id="home" class="py-20">
+  <div class="container flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row">
+    <div class="mb-14 lg:mb-0 lg:w-1/2">
+      <h1 class="max-w-xl hero__text text-[2.9rem] leading-none text-blue-400 font-extrabold font-sans *:
+       text-center lg:text-5xl lg:text-left lg:leading-tight 
+       dark:text-white mb-5">
+      Bienvenidos a MiuCoin </h1>
+      <p class="max-w-xl text-center dark:text-white text-gray-500 lg:text-left lg:max-w-md">
+              Miucoin es una criptomoneda única que nace de la comunidad, para la comunidad.
+              Inspirada en el espíritu felino, la cultura meme y la innovación tecnológica, Miucoin busca
+              revolucionar el panorama de las criptomonedas al ofrecer una experiencia divertida y accesible
+              
+              para todos los usuarios.
+      </p>
+      <div class="flex justify-center mt-10 lg:justify-start">
+        <a href="#" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"> comprar</a>
+        <a href="#Roadmap"class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Roadmap</a>
+      </div>  
+    </div> 
+    <div class="lg:w-1/2">
+      <img class="ml-auto img__src " src="Volando.webp" alt="image-hero" />
+      <strong class="text__title lg:text-2xl md:text-cemter md:text-xl dark:text-white text-black"> &quot;Los perros han cumplido su ciclo, es el momento de que Miucoin tome el liderazgo&quot;</strong>
+    </div>
   </div>
-</div>
-</section>
 
+</section>
 <style>
 
 p{
-		color: rgba(0.0, 0.0, 0.0, 0.8);
 		line-height: 1.4;
 		padding-left: 8px;
 		font-size: 1em;
@@ -84,96 +41,33 @@ p{
   #logo{
     width: 90px;
   }
- 
-  #border-path{
-		animation: draw 1s forwards 1s ease-in-out;
+  .card:hover {
+  animation: pulse 1s infinite;
+}
 
-	}
-	@keyframes draw {
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
-  @keyframes show {
-    from {
-      opacity: 0;
-      scale: 25%;
-    }
-    to{
-      opacity: 1;
-      scale: 100%;
-    }
-  }
-  .sec-1 .animate{
-    transform: translateX(100%);
-  }
-  .sec-1.active .animate{
-    transform: translateX(0);
-  }
-  section .animate{
-    transition:2s;
-  }
+
+
 
 </style>
-  
-<script>
-  function updatePath() {
-    const textMain = document.querySelector("#anim-p") as HTMLElement
-    const path = document.querySelector("#border-path") as SVGPathElement
-    
-    if (textMain && path) {
-      path.setAttribute(
-        "d",
-        `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${
-          textMain.offsetHeight / 2
-        }`
-       )
-      
-      const pathLength = path.getTotalLength()
+<script >
+  import ScrollReveal from 'scrollreveal/dist/scrollreveal.js'
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '60px',
+      duration: 3000,
+      delay: 600,
+    });
+    sr.reveal('.hero__text', {
+      origin: 'right',
+    });
+    sr.reveal('.img__src', {
+      origin: 'left',
+      delay:800,
+    });
+    sr.reveal('.text__title', {
+      origin: 'bottom',
+      delay: 800,
+    });
 
-      path.style.strokeDasharray = pathLength.toString()
-      path.style.strokeDashoffset = pathLength.toString()
-    }
-  }
+  </script>
 
-  //Increment
-  function incrementCounter(
-    selector: string,
-    current: number,
-    target: number,
-    duration: number,
-    letter: string = ""
-  ) {
-    let counter = document.getElementById(selector)
-    let stepTime = Math.abs(Math.floor(duration / target))
-    if (current < target && counter) {
-      current++
-      counter.innerText = current.toString() + letter
-      setTimeout(
-        () => incrementCounter(selector, current, target, duration, letter),
-        stepTime
-      )
-    }
-  }
-  incrementCounter("Holders", 0, 1500, 1000)
-  incrementCounter("recompesa", 0, 50, 1000, "k")
- 
-
-  window.addEventListener("DOMContentLoaded", updatePath)
-
-  window.addEventListener("resize", updatePath)
-
-  let sections = document.querySelectorAll("section");
-  window.onscroll = () =>{
-    sections.forEach(sec =>{
-      let top = window.scrollY;
-      let offset = sec.offsetTop -150;
-      let height = sec.offsetHeight;
-      if(top >= offset && top < offset + height){
-         sec.classList.add("active");  
-      }else{
-        sec.classList.remove("active");
-      }
-    })
-  }
-</script>

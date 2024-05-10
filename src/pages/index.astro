@@ -1,16 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 import Main from '../components/Main.astro';
 import Bento from '../components/Bento.astro';
+import Section from '../components/Section.astro';
+import Slider from '../components/Slider.astro';
 import Footer from '../components/Footer.astro';
+import { getI18N } from '../i18n';
+import Header from '../components/Header.astro';
+import Banner from '../components/util/Banner.astro';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<Layout title="Bienvenidos a MiuCoin la criptomoneda del momento">
+<Layout title=`${i18n.SEO_TITLE_1}&nbsp;${new Date().getFullYear()}&nbsp;${i18n.SEO_TITLE_2}`  description={i18n.SEO_DESCRIPTION}>
 </Layout>
+
 <Header />
-<Main/>
-<Bento/>
-<Footer/>
-<style>
-</style>
+<Banner />
+<main>
+    <Main/>
+    <Bento/>
+    <Slider />
+    <Section />
+    <Footer />
+</main>

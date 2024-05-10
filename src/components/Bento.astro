@@ -1,6 +1,8 @@
 ---
 import BentoItem from './BentoItem.astro'
 import { getI18N } from "../i18n/"
+import { Icon } from "astro-icon/components";
+
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -11,36 +13,54 @@ grid lg:grid-cols-10 auto-rows-[30rem] gap-4
 mx-auto p-6 md:p-12 lg:p-20
 ">
     
-    <BentoItem class="col-span-10 md:col-span-4" title={i18n.BENTO_TITLE_1}>
-
-        <div
-        slot="image"
-            class="background transition-scale absolute bottom-0 left-0 top-0
-            -z-10 h-full w-full bg-gradient-to-bl
-            bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110 "
-            data-src="/mision.webp">
-        </div>
-
-        <p slot="content" class="max-w-xl text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem pariatur doloremque tempore magni minus nisi debitis suscipit! Excepturi inventore, praesentium nesciunt corporis pariatur ad itaque maxime molestias impedit? Aliquid, mollitia.</p>
+    <BentoItem  class="col-span-10 md:col-span-4" title={i18n.BENTO_TITLE_1}>
+      <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full  dark:bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/About.png"
+    >
+    </div> 
+      
+      
+      <p slot="content" class="max-w-xl text-white md:text-lg"  set:html={i18n.BENTO_CONTENT_1}></p>
     </BentoItem>
 
     <BentoItem class="col-span-10 md:col-span-6" title={i18n.BENTO_TITLE_2}>
-        <div
-        slot="image"
-        class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-gradient-to-bl
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110 "
-        data-src="/peligro.webp" >
-    </div>
-        <p slot="content" class=" text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem pariatur doloremque tempore magni minus nisi debitis suscipit! Excepturi inventore, praesentium nesciunt corporis pariatur ad itaque maxime molestias impedit? Aliquid, mollitia.</p>
+      <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full  dark:bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="fondo lunar 1.jpg"
+    >
+    </div> 
+        <p slot="content" class=" text-white  md:text-lg" set:html={i18n.BENTO_CONTENT_2}></p>
     </BentoItem>
 
     <BentoItem class="col-span-10 md:col-span-6" title={i18n.BENTO_TITLE_3}>
-        <p slot="content" class="max-w-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem pariatur doloremque tempore magni minus nisi debitis suscipit! Excepturi inventore, praesentium nesciunt corporis pariatur ad itaque maxime molestias impedit? Aliquid, mollitia.</p>
+      <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full   dark:bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="fondo lunar 2.jpg"
+    >
+    </div> 
+        <p slot="content" class="max-w-xl text-white  md:text-lg" set:html={i18n.BENTO_CONTENT_3}></p>
     </BentoItem>
     
     <BentoItem  class="col-span-10 md:col-span-4"  title={i18n.BENTO_TITLE_4}>
-        <p  slot="content" class="max-w-xl text-base md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem pariatur doloremque tempore magni minus nisi debitis suscipit! Excepturi inventore, praesentium nesciunt corporis pariatur ad itaque maxime molestias impedit? Aliquid, mollitia.</p>
+      <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 dark:bg-blue-950 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/fondo lunar 3.jpg"
+    >
+    </div> 
+        <p  slot="content" class="max-w-xl text-base text-white md:text-lg" set:html={i18n.BENTO_CONTENT_4}></p>
     </BentoItem>    
      
 </section>

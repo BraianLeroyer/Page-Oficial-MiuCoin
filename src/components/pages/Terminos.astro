@@ -1,12 +1,10 @@
 ---
 import { getI18N } from "../../i18n/index" 
 import NavBarPages from '../util/NavBarPrivacidadAndTerminos.astro'
-
 import Layout from "../../layouts/Layout.astro"
-import NavBar from '../../components/NavBar.astro'
 import SubtitleItem from "../legalTerminos/SubtituloItem.astro"
 import DescriptionItem from "../legalTerminos/DescripcionItems.astro"
-
+import NavBarPrivacidadAndTerminos from "../util/NavBarPrivacidadAndTerminos.astro"
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -15,17 +13,8 @@ const H1_STYLES =
   "mx-auto mt-16 mb-4 text-wrap text-4xl font-semibold tracking-wide uppercase"
 ---
 
-<Layout title=`${i18n.SEO.COOKIES_TITLE}`>
-    <NavBarPages />  
-    <link
-    rel="preload"
-    href="/fonts/jura.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-    slot="preload"
-  />
-
+<Layout title=`${i18n.SEO.COOKIES_TITLE} &nbsp;${new Date().getFullYear()}` description={i18n.SEO.PRIVACY_POLICY_DESCRIPTION}>
+   <NavBarPrivacidadAndTerminos />
   <main class="py-8">
     <section
       class="max-w-5xl mx-auto my-24 text-pretty px-6 text-left text-lg leading-relaxed sm:px-20"
@@ -39,14 +28,7 @@ const H1_STYLES =
       <DescriptionItem
         description={i18n.LEGAL_NOTICE.ACCESS_AND_USE.DESCRIPTION_1}
       />
-
-      <!-- Ownership and contact data -->
-      
-
-      <!-- Purpose and content website -->
-    
-      
-      
+            
 
       <!-- Terms of use -->
       <SubtitleItem subtitle={i18n.LEGAL_NOTICE.TERMS_OF_USE.TITLE} />
@@ -96,8 +78,6 @@ const H1_STYLES =
           .DESCRIPTION_9}
       />
      
-      <!-- Disclaimer of liability -->
-     
       <!-- Intelectual and industrial property -->
       <SubtitleItem
         subtitle={i18n.LEGAL_NOTICE.INTELLECTUAL_AND_INDUSTRIAL_PROPERTY.TITLE}
@@ -127,9 +107,6 @@ const H1_STYLES =
         description={i18n.LEGAL_NOTICE.SOCIAL_NETWORKS.DESCRIPTION_1}
       />
       
-
-      <!-- Data protection -->
-     
       
       <!-- Site update -->
       <SubtitleItem subtitle={i18n.LEGAL_NOTICE.SITE_UPDATE.TITLE} />
@@ -155,7 +132,6 @@ const H1_STYLES =
 
       <!-- Applicable legislation and jurisdiction -->
     
-
       <p>
         <em>{i18n.LEGAL_NOTICE.MODIFICATIONS.LAST_UPDATE}</em>
       </p>

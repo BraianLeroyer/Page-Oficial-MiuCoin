@@ -9,5 +9,6 @@ export default {
 			'sans': ['Chivo', 'sans-serif'],
 		},
 	},
-	plugins: [],
+	plugins: [ require('tailwindcss-animated')],
 }
+

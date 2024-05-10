@@ -1,10 +1,10 @@
 {
-	"SEO_TITLE_1": "MiuCoin",
-	"SEO_TITLE_2": "- ",
-	"SEO_DESCRIPTION": "Descubre a los mejores creadores de contenido de España, Latinoamérica y Andorra. ¡Vota por tus favoritos! Celebra la innovación y el talento de Twitch, YouTube y más",
+	"SEO_TITLE_1": "Bienvenidos a MiuCoin la criptomoneda del momento",
+	"SEO_TITLE_2": "Haciendo que la mejor comunidad y la criptomoneda sea la numero uno ",
+	"SEO_DESCRIPTION": "MiuCoin es una criptomoneda que aspira a ser el puente entre la tecnología blockchain y la cultura meme, proporcionando una plataforma donde los usuarios puedan no solo intercambiar valor financiero, participar en desafíos creativos y construir una",
 	"SEO": {
 		"LEGAL_NOTICE_TITLE": "Aviso legal - MiuCoin",
-		"LEGAL_NOTICE_DESCRIPTION": "El aviso legal establece las disposiciones legales y las responsabilidades relacionadas con los Premios ESLAND, abordando aspectos como términos de uso, responsabilidades legales y acuerdos entre el usuario y la entidad responsable",
+		"LEGAL_NOTICE_DESCRIPTION": "El aviso legal establece las disposiciones legales y las responsabilidades, abordando aspectos como términos de uso, responsabilidades legales y acuerdos entre el usuario y la entidad responsable",
 		"PRIVACY_POLICY_TITLE": "Política de privacidad - MiuCoin",
 		"PRIVACY_POLICY_DESCRIPTION": "En MiuCoin, valoramos y respetamos la privacidad de nuestros usuarios. Nuestra política de privacidad detalla cómo recopilamos, utilizamos y protegemos la información que nos proporcionas.",
 		"COOKIES_TITLE":"Política de cookies - MiuCoin",
@@ -15,17 +15,15 @@
 	"HEADER": {
 		"LOGO": "Volver a la página de inicio de MiuCoin"
 	},
-	"INTRO_TITLE": "MiuCoin con una Bienvenida Miu Coin una mision por dar a nuestros usuarios",
-	"BENTO_TITLE_1": "Mision: nuestra mision en fase a nuestra comunidad",
-	"BENTO_CONTENT_1": "",
-	"BENTO_TITLE_2": "Sobre Nosotros ",
-	"BENTO_SUBTITLE_2": "16 de febrero de 2024",
-	"BENTO_CONTENT_2": " ",
-	"BENTO_TITLE_3": "Tecnologia",
-	"BENTO_SUBTITLE_3": "17 de febrero de 2024",
-	"BENTO_CONTENT_3": " ",
-	"BENTO_TITLE_4": "Advertencia",
-	"BENTO_CONTENT_4": " ",
+	"INTRO_TITLE": "MiuCoin con una Bienvenida MiuCoin una mision por dar a nuestros usuarios",
+	"BENTO_TITLE_1": "Vision",
+	"BENTO_CONTENT_1": "En un mundo cada vez más digital, la conexión y la creatividad son fundamentales. Miucoin aspira a ser el puente entre la tecnología blockchain y la cultura meme, proporcionando una plataforma donde los usuarios puedan no solo intercambiar valor financiero, participar en desafíos creativos y construir una comunidad sólida y vibrante.",
+	"BENTO_TITLE_2": "Memes Integrados",
+	"BENTO_CONTENT_2": "Miucoin no solo es una moneda digital, sino que también sera una plataforma para la creatividad. Los usuarios pueden enviar, votar y compartir memes directamente desde sus billeteras a travez de NFTs.",
+	"BENTO_TITLE_3": "Transacciones Rápidas y Económicas",	
+	"BENTO_CONTENT_3": "Basada en tecnología blockchain de la bsc (Binance smart chain) de última generación, Miucoin ofrece transacciones rápidas y económicas en todo momento, garantizando una experiencia fluida para los usuarios. ",
+	"BENTO_TITLE_4": "Desafíos y Concursos",
+	"BENTO_CONTENT_4": "Miucoin fomenta la participación activa a través de desafíos y concursos periódicos. Los usuarios pueden ganar Miucoin participando en actividades creativas y divertidas.",
 	"CATEGORY": "Categoría",
 	"LOG_OUT": "Cerrar sesión",
 	"FOOTER": {
@@ -42,7 +40,7 @@
 	"COOKIES": {
 		"POLICIES": {
 			"TITLE": "Política de Cookies",
-			"DESCRIPTION_1": "Esta Política de cookies es parte integrante del Aviso Legal y la Política de Privacidad de www.miucoin.io (en adelante, Sitio Web),  responsable de las Cookies y del tratamiento de datos personales obtenidos a través de cookies propias y de terceros que se usan en este Sitio Web.",
+			"DESCRIPTION_1": "Esta Política de cookies es parte integrante del Aviso Legal y la Política de Privacidad de www.miucoin.com (en adelante, Sitio Web),  responsable de las Cookies y del tratamiento de datos personales obtenidos a través de cookies propias y de terceros que se usan en este Sitio Web.",
 			"DESCRIPTION_2": "Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias en el panel de configuración de cookies. En cualquier momento podrás revocar el consentimiento o modificar tus preferencias de configuración de cookies accediendo nuevamente al panel de configuración. Asimismo, puedes evitar la descarga de cookies o eliminar las instaladas a través de la configuración de tu navegador, evitando que las cookies se almacenen en tu dispositivo. Es muy importante que leas la presente política de cookies.",
 			"DESCRIPTION_3": "Te informamos de la posibilidad de que el rechazo y desactivación de las cookies puede afectar o dificultar la navegación o la prestación de los servicios ofrecidos en este Sitio Web."
 		},
@@ -101,7 +99,6 @@
 		},
 		"UPDATES": {
 			"TITLE": "Actualizaciones y cambios en la política de cookies",
-			"DESCRIPTION": "FAN CONTENT pueden modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos y por el Comité Europeo de Protección de Datos, por ello se aconseja a los Usuarios que la visiten periódicamente.",
 			"DATE": "Fecha de la última actualización: Actualmente."
 		},
 		"SITE_COOKIES": {
@@ -157,7 +154,7 @@
 	"PRIVACY": {
 		"POLICY": {
 			"TITLE": "Política de privacidad",
-			"DESCRIPTION_1": "Nos complace que visite la web oficial de www.miucoin.io (en adelante, Sitio Web) y agradecemos su interés.",
+			"DESCRIPTION_1": "Nos complace que visite la web oficial de www.miucoin.com (en adelante, Sitio Web) y agradecemos su interés.",
 			"DESCRIPTION_2": "En MiuCoin, valoramos y respetamos la privacidad de nuestros usuarios. Nuestra política de privacidad detalla cómo recopilamos, utilizamos y protegemos la información que nos proporcionas."
 		},
 		"DEFINITIONS": {
@@ -165,12 +162,11 @@
 			"DESCRIPTION": "A los efectos de la presente Política, los siguientes términos tendrán el significado que se indica a continuación:",
 			"ITEM_1": "“Datos Personales”: toda información sobre una persona física identificada o identificable. Se considera persona física identificable toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador.",
 			"ITEM_2": "“Responsable del Tratamiento”: Persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determine los fines y medios del tratamiento de datos.",
-			"ITEM_3": "“Encargado del Tratamiento”: Persona física o jurídica, autoridad pública, servicio u otro organismo que trate datos personales por cuenta del responsable del tratamiento.",
-			"ITEM_4": "“Interesado-Usuario”: Toda persona física identificada o identificable cuyos datos personales sean objeto de tratamiento."		},
+			"ITEM_3": "“Encargado del Tratamiento”: Persona física o jurídica, autoridad pública, servicio u otro organismo que trate datos personales por cuenta del responsable del tratamiento."
+			},
 		"SOCIALS": {
 			"TITLE": "Redes sociales",
-			"DESCRIPTION_1": "Este Sitio Web puede contener enlaces que permiten acceder a diferentes redes sociales pertenecientes y gestionadas por terceros (p.ej. Facebook, Instagram, Telegram, TikTok). Estos enlaces en el Sitio Web tienen por único objeto facilitar a los Usuarios el acceso a redes sociales para informales sobre los eventos organizados .",
-			"DESCRIPTION_2": "La activación y uso de estas aplicaciones puede conllevar la identificación y autenticación del Usuario (login/contraseña) en las plataformas correspondientes, completamente externas al Sitio Web y fuera del control de UBIQ. Dichas redes sociales y plataformas disponen de sus propias políticas de privacidad y del tratamiento de las cookies. En este sentido, toda información y datos personales que el Usuario proporcione a estas plataformas será bajo su propia y exclusiva responsabilidad."
+			"DESCRIPTION_1": "Este Sitio Web puede contener enlaces que permiten acceder a diferentes redes sociales pertenecientes y gestionadas por terceros (p.ej. Facebook, Instagram, Telegram, TikTok). Estos enlaces en el Sitio Web tienen por único objeto facilitar a los Usuarios el acceso a redes sociales para informales sobre los eventos organizados ."
 		},
 		"COOKIES": {
 			"TITLE": "Cookies",
@@ -204,7 +200,7 @@
 		},
 		"INTELLECTUAL_AND_INDUSTRIAL_PROPERTY": {
 			"TITLE": "PROPIEDAD INTELECTUAL E INDUSTRIAL",
-			"DESCRIPTION_1": "Los Derechos de Propiedad Intelectual e Industrial sobre toda la información contenida en este Sitio Web, entre otros, marcas, nombres comerciales, diseño gráfico, dibujos, logotipos, imágenes, índices, textos, audios, vídeos, software, diseño y signos identificativos, así como sus códigos fuente, estructura de navegación, bases de datos, y todos los elementos en ellos contenidos, están protegidos por derechos de autor y derechos de propiedad intelectual e industrial de UBIQ o de terceros.",
+			"DESCRIPTION_1": "Los Derechos de Propiedad Intelectual e Industrial sobre toda la información contenida en este Sitio Web, entre otros, marcas, nombres comerciales, diseño gráfico, dibujos, logotipos, imágenes, índices, textos, audios, vídeos, software, diseño y signos identificativos, así como sus códigos fuente, estructura de navegación, bases de datos, y todos los elementos en ellos contenidos, están protegidos por derechos de autor y derechos de propiedad intelectual.",
 			"DESCRIPTION_2": "En ningún caso el acceso y uso al Sitio Web por parte de los Usuarios, se podrá considerar como una concesión de licencia de uso o derecho a ningún activo de UBIQ o de sus autores legítimos, por lo que no implicará una cesión, ni transmisión, ni cualquier tipo de renuncia de derechos de Propiedad Intelectual o Industrial.",
 			"DESCRIPTION_3": "La utilización no autorizada de la información contenida en el Sitio Web, su modificación o supresión de datos, así como la lesión de los Derechos de Propiedad Intelectual o Industrial de UBIQ o de terceros, dará lugar a las responsabilidades legalmente establecidas, reservándose UBIQ la posibilidad de ejercer las acciones judiciales que procedan en derecho contra los Usuarios que violen o infrinjan los derechos de propiedad intelectual o industrial."
 		},

@@ -1,7 +1,11 @@
 ---
 import DarkMode from './util/DarkMode'
 import { Icon } from 'astro-icon/components'
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <header class="header" id="header-nav">
@@ -15,10 +19,9 @@ import { Icon } from 'astro-icon/components'
         <Icon class="btn btn-x dark:text-white" id="close-icon" name="close" />
     </label>
     <nav class="navbar dark:text-white">
-        <a href="/" class="" style="--i:1;" >Inicio</a>
-        <a href="#About" class="" style="--i:1;" >Sobre Nosotros</a>
+        <a href={translatePath('/')} class="" style="--i:1;" >Inicio</a>
+        <a href={translatePath('/About')} class="" style="--i:1;" >Sobre Nosotros</a>
         <a href="#Footer" style=" --i:0;"  >Comunidad</a>
-        <a href="/Aviso" style="--i:1;" >Aviso Importante</a>
     </nav>
 </header>
 
@@ -116,7 +119,7 @@ import { Icon } from 'astro-icon/components'
     }
 
     #check:checked~.navbar{
-        height: 17.7rem;
+        height: 13.7rem;
     }
     .navbar a {
         display: block;

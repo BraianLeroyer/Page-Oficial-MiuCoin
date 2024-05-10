@@ -3,27 +3,28 @@ import Body from '../components/Body.astro';
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
+	description: string;
 	title: string;
 }
-
-const { title } = Astro.props;
+const {description, title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/Logo.svg" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>{title}</title>
 	</head>
+	<slot name="preload" />
+
 	<ViewTransitions />
 	<Body>
-		<main>
-			<slot />
-		</main>
+		<slot />
 	</Body>
 </html>
 <style is:global>
@@ -63,6 +64,4 @@ p {
 }
 }
 
-
- 
 </style>
