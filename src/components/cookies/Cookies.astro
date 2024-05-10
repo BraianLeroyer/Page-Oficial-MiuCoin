@@ -16,7 +16,7 @@ const H1_STYLES =
 
 ---
 
-<Layout title=`${i18n.SEO.COOKIES_TITLE}`>
+<Layout title=`${i18n.SEO.COOKIES_TITLE}&nbsp;${new Date().getFullYear()}` description={i18n.SEO.COOKIES_DESCRIPTION}>
   <NavBarPages />
     <main>
       <section
@@ -134,9 +134,7 @@ const H1_STYLES =
         <h1 class={H1_STYLES}>
           {i18n.COOKIES.UPDATES.TITLE}
         </h1>
-        <p>
-          {i18n.COOKIES.UPDATES.DESCRIPTION}
-        </p>
+      
         <h1 class={H1_STYLES}>
           {i18n.COOKIES.SITE_COOKIES.TITLE}
         </h1>
