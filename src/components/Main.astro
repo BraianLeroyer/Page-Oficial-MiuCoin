@@ -24,7 +24,26 @@
       <strong class="text__title lg:text-2xl md:text-cemter md:text-xl dark:text-white text-black"> &quot;Los perros han cumplido su ciclo, es el momento de que Miucoin tome el liderazgo&quot;</strong>
     </div>
   </div>
-
+<script>
+ import ScrollReveal from 'scrollreveal/dist/scrollreveal.js'
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '60px',
+      duration: 3000,
+      delay: 600,
+    });
+    sr.reveal('.hero__text', {
+      origin: 'right',
+    });
+    sr.reveal('.img__src', {
+      origin: 'left',
+      delay:800,
+    });
+    sr.reveal('.text__title', {
+      origin: 'bottom',
+      delay: 800,
+    });
+</script>
 </section>
 <style>
 
@@ -47,27 +66,4 @@ p{
 
 
 </style>
-
-<script >
-  /*
-  import ScrollReveal from 'scrollreveal/dist/scrollreveal.js'
-    const sr = ScrollReveal({
-      origin: 'bottom',
-      distance: '60px',
-      duration: 3000,
-      delay: 600,
-    });
-    sr.reveal('.hero__text', {
-      origin: 'right',
-    });
-    sr.reveal('.img__src', {
-      origin: 'left',
-      delay:800,
-    });
-    sr.reveal('.text__title', {
-      origin: 'bottom',
-      delay: 800,
-    });
-*/
-  </script>
 
