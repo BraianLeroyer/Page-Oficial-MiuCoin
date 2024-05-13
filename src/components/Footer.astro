@@ -1,10 +1,9 @@
 ---
 import { Icon } from "astro-icon/components";
 
-import { getLangFromUrl, useTranslations, useTranslatedPath, } from '../i18n/utils';
+import { getLangFromUrl, useTranslatedPath, } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 
-const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 <footer id="Footer" class="bg-black/10">
@@ -49,13 +48,13 @@ const translatePath = useTranslatedPath(lang);
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-2">
-                          <a href={translatePath('/privacidad')} class="hover:underline">Privacidad</a>
+                          <a href={translatePath('/my-repo/privacidad')} class="hover:underline">Privacidad</a>
                       </li>
                       <li>
-                          <a href={translatePath('/terminos')} class="hover:underline">Terminos &amp; Condiciones</a>
+                          <a href={translatePath('/my-repo/terminos')} class="hover:underline">Terminos &amp; Condiciones</a>
                       </li>
                       <li>
-                        <a href={translatePath('/cookie')} class="hover:underline">Cookies</a>
+                        <a href={translatePath('/my-repo/cookie')} class="hover:underline">Cookies</a>
                       </li>
                   </ul>
               </div>
