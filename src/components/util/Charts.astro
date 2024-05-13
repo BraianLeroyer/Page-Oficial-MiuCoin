@@ -1,0 +1,91 @@
+<div class="container">  
+    <div class="box">
+        <p class="dark:text-white"><span>Equipo</span>10%</p>
+        <div class="progress_box">
+            <div class="progress equipo"></div>
+        </div>
+    </div>
+    <div class="box">
+        <p class="dark:text-white"><span>Comunidad</span>50%</p>
+        <div class="progress_box">
+            <div class="progress comunidad"></div>
+        </div>
+    </div>
+    <div class="box">
+        <p class="dark:text-white"><span>Distribucion</span>25%</p>
+        <div class="progress_box">
+            <div class="progress distribucion"></div>
+        </div>
+    </div>
+    <div class="box">
+        <p class="dark:text-white"><span>Reserva</span>15%</p>
+        <div class="progress_box">
+            <div class="progress reserva"></div>
+        </div>
+    </div>
+</div>
+<style>
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:10%;
+}
+.box{
+    margin-top: 40px;
+}
+.box p{
+    margin: 10px 0;
+    margin-top: 30px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.progress_box{
+    width: 100%;
+    height: 15px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.progress{
+    height: 100%;
+
+}
+.progress.equipo{
+    width: 10%;
+    background-image: linear-gradient(0deg, hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1)100%
+    );
+}
+
+.progress.comunidad{
+    width: 50%;
+    background-image: linear-gradient(0deg, rgb(216, 178, 11) 0%,
+    rgb(221, 224, 0)100%
+    );
+}
+
+.progress.distribucion{
+    width: 25%;
+    background-image: linear-gradient(0deg, rgb(216, 7, 35) 0%,
+    rgb(240, 37, 98)100%
+    );
+}
+
+
+.progress.reserva{
+    width: 15%;
+    background-image: linear-gradient(0deg, rgb(13, 116, 19) 0%,
+    rgb(22, 117, 50)100%
+    );
+}
+
+@media only screen and(min-width: 550px){
+    .conteiner{
+        width: 550px;
+    }
+}
+
+</style>

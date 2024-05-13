@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
-import Chart from '../components/util/Charts';
-
+import Chart from "../components/util/Charts.astro";
+import Charts from "../components/util/Charts.astro";
 ---
 
 <Layout title="Sobre Nosotros" description="">
@@ -79,9 +79,9 @@ entretenimiento.
     </div>
 
 
-    <div class="dark:bg-zinc-400  rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full pb-80">
-      <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 text-center dark:text-neutral-600">Chart MiuCoin</h2>
-        <Chart client:visible />
+    <div class="lg:dark:bg-zinc-600 md:dark:bg-zinc-50  rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full pb-80 lg:py-32">
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 text-center lg:dark:text-black md:dark:text-zinc-500">Chart MiuCoin</h2>
+      <Charts />
     </div>
     
     <Footer />

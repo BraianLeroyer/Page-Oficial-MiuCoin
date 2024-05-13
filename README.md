@@ -14,6 +14,6 @@ Cómo contribuir:
 Contacto:
 Para más información sobre Miucoin, visita nuestro sitio web oficial aquí o síguenos en nuestras redes sociales:
 
-Twitter: @miucoin
-Telegram: Miucoin Official
+Twitter: @Miu_coin
+Telegram: Miu_coin Official
 ¡Únete a nosotros en este emocionante viaje hacia la luna y más allá con Miucoin! 🌕🚀
