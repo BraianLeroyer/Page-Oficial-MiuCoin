@@ -1,11 +1,14 @@
 ---
 import DarkMode from './DarkMode'
 import { Icon } from 'astro-icon/components'
+import { getLangFromUrl, useTranslatedPath, } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url);
 
+const translatePath = useTranslatedPath(lang);
 ---
 
 <header class="header" id="header-nav">
-    <img src="Logo.webp" alt="Logo" />
+    <a href={translatePath('/')}><img src="./images/Logo-page.webp" alt="Logo" /></a>
     <div class="flex flex-col items-center justify-center m-auto">
         <DarkMode client:load/>
     </div>
@@ -15,7 +18,7 @@ import { Icon } from 'astro-icon/components'
         <Icon class="btn btn-x dark:text-white" id="close-icon" name="close" />
     </label>
     <nav class="navbar dark:text-white">
-        <a href="/" class="" style="--i:1;" >Volver</a>
+        <a href={translatePath('/')} class="" style="--i:1;" >Volver</a>
     </nav>
 </header>
 

@@ -4,6 +4,9 @@ export default {
 	darkMode: 'class', // or 'media' or 'class' 
 	theme: {
 		extend: {
+			backgroundImage: {
+				'hero-pattern': "url('/images/space.webp')"
+			}
 		},
 		fontFamily: {
 			'sans': ['Chivo', 'sans-serif'],

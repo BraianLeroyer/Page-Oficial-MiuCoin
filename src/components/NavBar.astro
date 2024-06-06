@@ -8,7 +8,7 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <header class="header" id="header-nav">
-    <img src="Logo.webp" alt="Logo" />
+    <a href={translatePath('/')}><img src="/images/Logo-page.webp" alt="Logo" /></a>
     <div class="flex flex-col items-center justify-center m-auto">
         <DarkMode client:load/>
     </div>

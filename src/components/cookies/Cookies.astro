@@ -18,7 +18,7 @@ const H1_STYLES =
 
 <Layout title=`${i18n.SEO.COOKIES_TITLE}&nbsp;${new Date().getFullYear()}` description={i18n.SEO.COOKIES_DESCRIPTION}>
   <NavBarPages />
-    <main>
+    <main class="text-black dark:text-white">
       <section
         class="max-w-5xl mx-auto my-24 text-pretty px-6 text-left text-lg leading-relaxed sm:px-20 py-20"
       >
@@ -186,3 +186,13 @@ const H1_STYLES =
     </main>
 
   </Layout>
+
+  <style>
+    @media (max-width: 640px){
+      p{
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    
+    </style>

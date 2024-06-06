@@ -3,21 +3,20 @@ import NavBarPages from '../util/NavBarPrivacidadAndTerminos.astro'
 
 import { getI18N } from "../../i18n/index" 
 import Layout from "../../layouts/Layout.astro"
-
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 const HEADING_STYLES =
   "mx-auto mt-16 mb-4 text-wrap text-4xl font-semibold tracking-wide uppercase"
 const SECTION_STYLES = 
-  "max-w-5xl mx-auto my-10 text-pretty px-6 text-left text-lg leading-relaxed sm:px-20"
+  "max-w-5xl mx-auto my-10 text-pretty px-6 text-left  text-lg leading-relaxed sm:px-20"
 ---
 
 <Layout title=`${i18n.SEO.PRIVACY_POLICY_TITLE} &nbsp;${new Date().getFullYear()}` description={i18n.SEO.PRIVACY_POLICY_DESCRIPTION} >
   <NavBarPages />
-    <main class="py-20">
+    <main class="py-20 text-black dark:text-white">
         <section class=`${SECTION_STYLES}`>
             <h2 class=`${HEADING_STYLES}`>{i18n.PRIVACY.POLICY.TITLE}</h2>
-            <p>{i18n.PRIVACY.POLICY.DESCRIPTION_1}</p>
+            <p >{i18n.PRIVACY.POLICY.DESCRIPTION_1}</p>
             <p>{i18n.PRIVACY.POLICY.DESCRIPTION_2}</p>
         </section>
         <section class=`${SECTION_STYLES}`>
@@ -40,5 +39,14 @@ const SECTION_STYLES =
           </section>
         
     </main>
-
+  </BodyComponent>
 </Layout>
+<style>
+  @media (max-width: 640px){
+      p{
+        font-size: 2rem;
+        font-weight: 400;
+      }
+  }
+
+</style>

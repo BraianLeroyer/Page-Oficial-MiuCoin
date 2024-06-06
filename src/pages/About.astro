@@ -10,9 +10,9 @@ import Charts from "../components/util/Charts.astro";
     <div class="container mx-auto px-4 py-40">
       <div class="flex flex-col lg:flex-row">
         <div class="lg:w-1/2">
-          <h1 class=" hero__text text-4xl font-bold mb-4">Sobre Nosotros</h1>
-          <h3 class="text-2xl font-bold mb-4 text-gray-500">Mision</h3>
-          <p class="text-gray-600 mb-8 dark:text-white">
+          <h1 class=" hero__text text-4xl font-bold mb-4 uppercase" >Sobre Nosotros</h1>
+          <h3 class="text-2xl font-bold mb-4 text-gray-500 dark:text-white">Mision</h3>
+          <p class="text-gray-500 font-bold mb-8 dark:text-white">
             impulsar la innovación y el crecimiento dentro del espacio de las criptomonedas basadas en
 memes. Nos comprometemos a proporcionar una plataforma segura y confiable que permita a
 los desarrolladores de &quot;memecoins&quot; lanzar y mejorar sus proyectos de manera eficiente y
@@ -24,7 +24,7 @@ entretenimiento.
           </p>
         </div>
         <div class="lg:w-48 mt-10 lg:mt-0 ml-40 " >
-          <img src="Nosotros.png" alt="About Us Image" class="img__src rounded-lg">
+          <img src="/imagesAbout/Nosotros.png" alt="About Us Image" class="img__src rounded-lg">
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@ entretenimiento.
 
   
 
-    <div class="bg-white dark:bg-zinc-800 rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full">
+    <div class="dark:bg-gradient-to-b from-transparent from-17% via-[#151836]/50 to-[#151836]/80 border border-gray-900 rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full">
       <div class="max-w-lg mx-auto">
         <h2 class="text-3xl font-bold text-center dar mb-8">Tokenomic</h2>
           <!-- Información del Token -->
@@ -53,38 +53,63 @@ entretenimiento.
     
     </div>
 
-    <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 py-32 text-center dark:text-white">Distribución Inicial</h2> 
+    <h2 class="text-xl  font-semibold mb-2 py-32 text-center dark:text-white">Distribución Inicial</h2> 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text__title">
-      <div class="bg-white p-4 rounded-md shadow-md ">
-        <h2 class="text-lg font-bold mb-2 dark:text-black">Equipo</h2>
-        <p class="text-3xl text-blue-400 font-bold mb-2 ">10%</p>
-        <p class="text-sm dark:text-black">Equipo de desarrollo y gastos operativos.</p>
+      <div class="dark:bg-gradient-to-b from-transparent from-17% via-[#151836]/50 to-[#151836]/90 border border-blue-600 p-4 rounded-md shadow-md ">
+        <h2 class="text-lg font-bold mb-2 dark:text-white text-center">Equipo</h2>
+        <p class="porcentaje text-3xl text-blue-400 font-bold mb-2 text-center ">10%</p>
+        <p class="text-sm dark:text-white">Equipo de desarrollo y gastos operativos.</p>
       </div>
-      <div class="bg-white p-4 rounded-md shadow-md">
-        <h2 class="text-lg font-bold mb-2 dark:text-black">Comunidad</h2>
-        <p class="text-3xl text-yellow-400 font-bold mb-2 ">50%</p>
-        <p class="text-sm dark:text-black">Distribución inicial entre la comunidad y el equipo de desarrollo.</p>
+      <div class="dark:bg-gradient-to-b from-transparent from-17% via-[#151836]/50 to-[#151836]/90 border border-yellow-400 p-4 rounded-md shadow-md">
+        <h2 class="text-lg font-bold mb-2 dark:text-white text-center">Comunidad</h2>
+        <p class="porcentaje text-3xl text-yellow-400 font-bold mb-2 text-center ">50%</p>
+        <p class="text-sm dark:text-white">Distribución inicial entre la comunidad y el equipo de desarrollo.</p>
       </div>
-      <div class="bg-white p-4 rounded-md shadow-md">
-        <h2 class="text-lg font-bold mb-2 dark:text-black">Distribución</h2>
-        <p class="text-3xl text-red-400 font-bold mb-2 ">25%</p>
-        <p class="text-sm dark:text-black">Reserva para futuros desarrollos y crecimiento de la comunidad.</p>
+      <div class="dark:bg-gradient-to-b from-transparent from-17% via-[#151836]/50 to-[#151836]/90 border border-red-400 p-4 rounded-md shadow-md">
+        <h2 class="text-lg font-bold mb-2 dark:text-white text-center">Distribución</h2>
+        <p class="porcentaje text-3xl text-red-400 font-bold mb-2  text-center">25%</p>
+        <p class="text-sm dark:text-white">Reserva para futuros desarrollos y crecimiento de la comunidad.</p>
       </div>
-      <div class="bg-white p-4 rounded-md shadow-md">
-        <h2 class="text-lg font-bold mb-2 dark:text-black">Reserva</h2>
-        <p class="text-3xl text-green-400 font-bold mb-2 ">15%</p>
-        <p class="text-sm dark:text-black">Incentivos y recompensas para la participación comunitaria.</p>
+      <div class="dark:bg-gradient-to-b from-transparent from-17% via-[#151836]/50 to-[#151836]/90 border border-green-400 p-4 rounded-md shadow-md">
+        <h2 class="text-lg font-bold mb-2 dark:text-white text-center">Reserva</h2>
+        <p class="porcentaje text-3xl text-green-400 font-bold mb-2 text-center md:text-2xl">15%</p>
+        <p class="text-sm dark:text-white">Incentivos y recompensas para la participación comunitaria.</p>
       </div>
     </div>
 
 
-    <div class="lg:dark:bg-zinc-600 md:dark:bg-zinc-50  rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full pb-80 lg:py-32">
-      <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 text-center lg:dark:text-black md:dark:text-zinc-500">Chart MiuCoin</h2>
+    <div class="  rounded-lg shadow-md p-4 md:p-6 lg:p-8 w-full pb-80 lg:py-32">
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 text-center lg:dark:text-white md:dark:text-zinc-500">Bar Progress MiuCoin</h2>
       <Charts />
     </div>
     
     <Footer />
 </Layout>
+
+<style>
+  @media (min-width: 1024px) {
+    .hero__text {
+      font-size: 3rem;
+    }
+    .img__src {
+      width: 400px;
+    }
+    .text__title {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 780px) {
+    p{
+      font-size: 1.1rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+    .porcentaje{
+      font-size: 2rem;
+    }
+  }
+</style>
 
 <script>
   

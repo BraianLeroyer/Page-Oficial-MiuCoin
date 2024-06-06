@@ -8,6 +8,7 @@ import Footer from '../components/Footer.astro';
 import { getI18N } from '../i18n';
 import Header from '../components/Header.astro';
 import Banner from '../components/util/Banner.astro';
+import Body from '../components/Body.astro';
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -18,10 +19,12 @@ const i18n = getI18N({ currentLocale })
 
 <Header />
 <Banner />
-<main>
-    <Main/>
-    <Bento/>
-    <Slider />
-    <Section />
-    <Footer />
-</main>
+<Body>
+    <main>
+        <Main/>
+        <Bento/>
+        <Slider />
+        <Section />
+        <Footer />
+    </main>
+</Body>
