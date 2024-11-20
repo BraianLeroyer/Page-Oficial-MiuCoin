@@ -1,18 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import NavBar from "../components/NavBar.astro";
-import Footer from "../components/Footer.astro";
-import Charts from "../components/util/Charts.astro";
+import Layout from "@layouts/Layout.astro";
+import NavBar from "@components/NavBar.astro";
+import Footer from "@components/Footer.astro";
+import Charts from "@components/util/Charts.astro";
+import Body from "@components/Body.astro";
 ---
 
 <Layout title="Sobre Nosotros" description="">
     <NavBar />
+    <Body>
     <div class="container mx-auto px-4 py-40">
       <div class="flex flex-col lg:flex-row">
         <div class="lg:w-1/2">
           <h1 class=" hero__text text-4xl font-bold mb-4 uppercase" >Sobre Nosotros</h1>
-          <h3 class="text-2xl font-bold mb-4 text-gray-500 dark:text-white">Mision</h3>
-          <p class="text-gray-500 font-bold mb-8 dark:text-white">
+          <h3 class="text-2xl font-bold mb-4 text-gray-500  dark:text-white">Mision</h3>
+          <p class="text-gray-500 font-bold mb-8 dark:text-white ">
             impulsar la innovación y el crecimiento dentro del espacio de las criptomonedas basadas en
 memes. Nos comprometemos a proporcionar una plataforma segura y confiable que permita a
 los desarrolladores de &quot;memecoins&quot; lanzar y mejorar sus proyectos de manera eficiente y
@@ -84,6 +86,7 @@ entretenimiento.
     </div>
     
     <Footer />
+  </Body>
 </Layout>
 
 <style>
